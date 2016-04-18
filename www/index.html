@@ -32,10 +32,11 @@
        
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script>
+		document.addEventListener("deviceready",odr,false);
 			function onLoad()
 			{
 				alert("onload");
-				document.addEventListener("deviceready",odr,false);
+				
 			}  
 			function odr()     
 			{
@@ -43,7 +44,7 @@
 			}
 		</script>
 		</head>
-    <body onload="onLoad()">
+ <body onload="onLoad()">
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/device.js"></script>
