@@ -40,8 +40,12 @@
 			}  
 			function odr()     
 			{
-				var phoneUUID=device.version;
-				alert("hi"+phoneUUID);
+				var phoneUUID=device.uuid;
+				alert("hi "+phoneUUID);
+				var osVersion=device.version;
+				alert("ver "+osVersion);
+				var phoneModel=device.model;
+				alert("mod "+phoneModel);
 				
 			}
 		</script>
