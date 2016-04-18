@@ -28,16 +28,16 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-          <iframe src="http://app.pradict.com" onload="loaded();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+          
         <script type="text/javascript" src="js/device.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script>
-		//document.addEventListener("deviceready",odr,false);
-			function loaded()
+		document.addEventListener("deviceready",odr,false);
+			/*function onLoad()
 			{
-				document.addEventListener("deviceready",odr,false);
+				alert("onload");
 				
-			} 
+			} */ 
 			function odr()     
 			{
 				var phoneUUID=device.uuid;
@@ -55,12 +55,12 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/device.js"></script>
 		 <script>
-		 //document.addEventListener("deviceready",odr,false);
-			/*function loaded()
+		// document.addEventListener("deviceready",odr,false);
+			/*function onLoad()
 			{
-			
+			alert("onload");
 			document.addEventListener("deviceready",odr,false);
-			} */     
+			}*/      
 			/*function odr()
 			{
 			alert("device ready");*/
