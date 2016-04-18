@@ -33,6 +33,11 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script>
 		document.addEventListener("deviceready",odr,false);
+			/*function onLoad()
+			{
+				alert("onload");
+				
+			} */ 
 			function odr()     
 			{
 				var phoneUUID=device.uuid;
@@ -45,8 +50,23 @@
 			}
 		</script>
 		</head>
- <body>
-        <div class="item">
+ <body onload="onLoad()">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/device.js"></script>
+		 <script>
+		 document.addEventListener("deviceready",odr,false);
+			function onLoad()
+			{
+			alert("onload");
+			document.addEventListener("deviceready",odr,false);
+			}
+			function odr()
+			{
+			alert("device ready");
+			}
+		</script>
+		<div class="item">
 			UUID <p id="phoneUUID" class="item-note"></p>
 		</div>
     </body>
