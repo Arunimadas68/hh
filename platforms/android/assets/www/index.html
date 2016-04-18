@@ -52,16 +52,16 @@ $("#phoneUUID").html(phoneUUID);*/
 }
 </script>
     </head>
-    <body>
+<body onload="onLoad()">
          <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="device.js"></script>
 		<script>
 document.addEventListener("deviceready",odr,false);
 function onLoad()
-{
+{   
 alert("onload");
-document.addEventListener("deviceready",odr,false);
+//document.addEventListener("deviceready",odr,false);
 }
 function odr()
 {
