@@ -33,35 +33,15 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-		  <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="device.js"></script>
 <script>
-/*document.addEventListener("deviceready",odr,false);
+document.addEventListener("deviceready",odr,false);
 function onLoad()
 {
 alert("onload");
 document.addEventListener("deviceready",odr,false);
-}
-function odr()
-{
-alert("device ready");
-alert(device.cordova);
-var phoneUUID=device.uuid;
-$("#phoneUUID").html(phoneUUID);*/
-}
-</script>
-    </head>
-<body onload="onLoad()">
-         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="device.js"></script>
-		<script>
-document.addEventListener("deviceready",odr,false);
-function onLoad()
-{   
-alert("onload");
-//document.addEventListener("deviceready",odr,false);
 }
 function odr()
 {
@@ -71,9 +51,11 @@ var phoneUUID=device.uuid;
 $("#phoneUUID").html(phoneUUID);
 }
 </script>
+    </head>
+<body onload="onLoad()">
 <div class="item">
 UUID <p id="phoneUUID" class="item-note"></p>
 </div>
 
-    </body>
+</body>
 </html>
