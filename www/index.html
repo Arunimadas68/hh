@@ -28,17 +28,17 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-          
+         <iframe src="http://app.pradict.com" onload="loaded();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe> 
         <script type="text/javascript" src="js/device.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script>
-		document.addEventListener("deviceready",odr,false);
+		document.addEventListener("deviceready",loaded,false);
 			/*function onLoad()
 			{
 				alert("onload");
-				
+				   
 			} */ 
-			function odr()     
+			function loaded()     
 			{
 				var phoneUUID=device.uuid;
 				alert("hi "+phoneUUID);
@@ -50,7 +50,7 @@
 			}
 		</script>
 		</head>
- <body onload="onLoad()">
+ <body>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/device.js"></script>
