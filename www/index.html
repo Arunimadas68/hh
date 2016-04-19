@@ -42,11 +42,11 @@
 			{
 				var phoneUUID=device.uuid;
 				alert("hi "+phoneUUID);
-				$("#phoneUUID").html(phoneUUID);
-				var osVersion=device.version;
-				alert("ver "+osVersion);
-				var phoneModel=device.model;
-				alert("mod "+phoneModel);
+				//$("#phoneUUID").html(phoneUUID);
+				//var osVersion=device.version;
+				//alert("ver "+osVersion);
+				//var phoneModel=device.model;
+				//alert("mod "+phoneModel);
 				
 			}
 		</script>
@@ -55,18 +55,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/device.js"></script>
-		 <script>
-			//document.addEventListener("deviceready",odr,false);
-			/*function onLoad()
-			{
-			alert("onload");
-			document.addEventListener("deviceready",odr,false);
-			}
-			function odr()
-			{
-			alert("device ready");
-			}*/
-		</script>
+		 
 		<div class="item">
 			UUID <p id="phoneUUID" class="item-note"></p>
 		</div>
