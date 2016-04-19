@@ -36,11 +36,25 @@
 			
 			function loaded()     
 			{
-				var phoneUUID=device.platform;
-				alert("Device ID:::"+phoneUUID);
+				var deviceId=device.uuid;
+				alert("Device ID:::"+deviceId);
+				getMyUi(deviceId);
 						
 			}
-			
+			function getMyUi(deviceId){
+			var flag= 1;
+			if(flag){
+				if (device.platform == 'android' || device.platform == 'Android'){
+					console.log('http://app.pradict.com/index.php?id=1&devType=2&devId='+deviceId);
+					document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devType=2&devId='+deviceId;//for Android
+				}
+				else
+				{
+					document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devType=3&devId='+deviceId;//for ios
+				}
+			}else{
+				flag = 0;   
+			}
 		</script>
 		</head>
  <body>
