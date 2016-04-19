@@ -7,16 +7,16 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.phongap.deviceinfo"
         },
-        "cordova-plugin-device": {
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.phongap.deviceinfo"
         },
         "cordova-plugin-schedule": {
             "PACKAGE_NAME": "com.phongap.deviceinfo"
         },
-        "cordova-plugin-network-information": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phongap.deviceinfo"
         }
     },
