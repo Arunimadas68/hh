@@ -20,7 +20,9 @@
 	<feature name="Device">
         <param name="android-package" value="cordova-plugin-device" />
     </feature>
-	 <platform name="android">
+	<preference name="LoadUrlTimeoutValue" value="50000" />
+    <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+   
 </widget>
