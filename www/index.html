@@ -37,16 +37,18 @@
 		document.addEventListener("deviceready",loaded,false);
 			function loaded()     
 			{
-				document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devId='+device.uuid;
+				//document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devId='+device.uuid;
 				var phoneUUID=device.uuid;
 				alert("Device Id::::"+phoneUUID);
 			}
 		</script>
-		</head>
+		</head>  
  <body>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/device.js"></script>
-		 
+		<div class="item">
+			UUID <p id="phoneUUID" class="item-note"></p>
+		</div> 
 </body>    
 </html>
